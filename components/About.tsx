@@ -1,4 +1,5 @@
-import {LogoLinkedin} from "@carbon/icons-react";
+import { LogoLinkedin } from "@carbon/icons-react";
+
 export default function About() {
   return (
     <section id="about" className="section" style={{ borderBottom: '1px solid var(--color-hairline)' }}>
@@ -8,14 +9,7 @@ export default function About() {
           01 — About
         </p>
 
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: 'var(--space-xxl)',
-            alignItems: 'start',
-          }}
-        >
+        <div className="about-grid">
           {/* Left column */}
           <div>
             <h2 className="t-display-md" style={{ marginBottom: 'var(--space-lg)' }}>
@@ -40,15 +34,16 @@ export default function About() {
               systems that are not only functional but resilient against the threats of tomorrow.
             </p>
 
-            <div style={{ display: 'flex', gap: 'var(--space-md)' }}>
+            <div style={{ display: 'flex', gap: 'var(--space-md)', alignItems: 'center' }}>
               <a href="#projects" className="btn btn-primary">See my work</a>
               <a
                 href="https://linkedin.com/in/mothish-raghavendra"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-ghost"
+                className="btn btn-ghost about-linkedin-btn"
               >
-                <LogoLinkedin />
+                <LogoLinkedin size={20} />
+                <span>LinkedIn</span>
               </a>
             </div>
           </div>
@@ -107,9 +102,47 @@ export default function About() {
       </div>
 
       <style>{`
+        .about-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: var(--space-xxl);
+          align-items: start;
+        }
+
+        /* LinkedIn button — matches pill height of btn-primary,
+           shows icon + label side by side */
+        .about-linkedin-btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          /* inherit all btn sizing so height matches "See my work" */
+        }
+
         @media (max-width: 1056px) {
-          #about .container > div[style*="grid-template-columns: 1fr 1fr"] {
+          .about-grid {
             grid-template-columns: 1fr !important;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .about-grid {
+            gap: var(--space-xl) !important;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .about-grid {
+            gap: var(--space-lg) !important;
+          }
+
+          /* Stack buttons vertically on very small screens */
+          #about .btn {
+            width: 100%;
+            justify-content: center;
+          }
+
+          #about div[style*="display: flex"][style*="gap"] {
+            flex-direction: column;
           }
         }
       `}</style>
