@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { projects } from '@/data/projects'
 import { LogoGithub } from "@carbon/icons-react";
 
-const categories = ['All', 'Post-Quantum Cryptography', 'Quantum Computing', 'Machine Learning', 'Full Stack', 'Systems / Cryptography']
+const categories = ['All', 'Quantum Computing', 'Machine Learning', 'Full Stack']
 
 export default function Projects() {
   const [active, setActive] = useState('All')

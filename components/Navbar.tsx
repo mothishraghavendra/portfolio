@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
+import { Catalog } from "@carbon/icons-react";
 import Link from 'next/link'
 
 const navLinks = [
@@ -104,7 +105,7 @@ export default function Navbar() {
               className="btn btn-primary"
               style={{ marginLeft: 'var(--space-sm)', height: 40, fontSize: 14 }}
             >
-              Resume ↗
+              <Catalog /> Resume
             </a>
           </div>
 

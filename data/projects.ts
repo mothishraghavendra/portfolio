@@ -71,18 +71,4 @@ export const projects: Project[] = [
     ],
     tech: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express.js', 'MySQL'],
   },
-  {
-    id: 'lanmsg',
-    title: 'LAN Messenger Architectures (Go)',
-    year: '2024',
-    category: 'Systems / Cryptography',
-    description:
-      'Explored Go-based LAN messenger projects (lanmsg, Locket) with hybrid PQC crypto layers and mDNS discovery.',
-    details: [
-      'ML-KEM-768 + X25519 hybrid key exchange',
-      'mDNS/UDP peer discovery, Fyne GUI, SQLite persistence',
-      'Domain-driven package organization and production-grade layout',
-    ],
-    tech: ['Go', 'ML-KEM-768', 'X25519', 'mDNS', 'Fyne', 'SQLite'],
-  },
 ]

@@ -34,7 +34,7 @@ const skillGroups = [
   {
     category: 'Tools & Platforms',
     icon: <Settings />,
-    skills: ['Git', 'WPF / .NET', 'Chrome Extensions API', 'MVVM', 'TCP Networking'],
+    skills: ['Git', 'WPF / .NET', 'Chrome Extensions API', 'MVVM', 'TCP Networking','Linux'],
   },
 ]
 
