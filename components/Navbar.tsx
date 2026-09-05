@@ -81,7 +81,7 @@ export default function Navbar() {
             ))}
 
             <a
-              href="/resume/Mothish_Resume.pdf"
+              href="https://drive.google.com/file/d/1k0o2ZIJjIji7MaOI18C3W3DN3Y8CG-D9/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"
