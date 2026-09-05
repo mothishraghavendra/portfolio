@@ -24,24 +24,6 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Utility bar */}
-      <div className="utility-bar">
-        <div className="container" style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-xl)' }}>
-          <span className="t-caption" style={{ color: 'var(--color-ink-muted)' }}>
-            B.Tech CSE · JNTU Anantapur · Intern @ DRDO CABS
-          </span>
-          <span style={{ marginLeft: 'auto' }}>
-            <a
-              href="mailto:mothish.k.raghavendra@gmail.com"
-              className="t-caption"
-              style={{ color: 'var(--color-ink-muted)', textDecoration: 'none' }}
-            >
-              mothish.k.raghavendra@gmail.com
-            </a>
-          </span>
-        </div>
-      </div>
-
       {/* Top nav */}
       <nav
         style={{

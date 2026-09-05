@@ -4,7 +4,12 @@ export interface Certification {
   year: string
   category: 'Quantum' | 'AI' | 'Other'
 }
-
+export interface Achievements{
+  title:string,
+  year:string,
+  description:string,
+  tags?:string[]
+}
 export const certifications: Certification[] = [
   {
     title: 'Quantum Fundamentals and Advanced Algorithms',
@@ -38,7 +43,7 @@ export const certifications: Certification[] = [
   },
 ]
 
-export const achievements = [
+export const achievements:Achievements[] = [
   {
     title: 'Grand Finalist — Amaravathi Quantum Valley Hackathon',
     year: '2025',
